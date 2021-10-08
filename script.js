@@ -1,4 +1,9 @@
-
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <title> Calculation Equations </title>
+    <meta charset="utf-8"/>
+</head>
 
 
 // part 1
