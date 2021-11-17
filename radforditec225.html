@@ -4,7 +4,23 @@
     <title> Calculation Equations Calculator</title>
     <meta charset="utf-8"/>
 </head>
-    
+    <script>        
+function computeForce() {
+
+   m = document.forms["input_form"]["mterm"].value;
+   a = document.forms["input_form"]["aterm"].value;
+   if (m == 0){
+        outputText = "<em>m</em> cannot equal zero!";
+    } else if (isNaN(m)){
+        outputText = "<em>m</em> must be a number!":
+    } else if (isNaN(a)){
+    outputText = "<em>a</em> must be a number!";}
+if (a ==0){
+outputText = "<em>a</em> cannot equal zero!";
+    } 
+document.getElementById("output_text").innerHTML = outputText:
+}
+        </script>
     <body>
         <h1> Calculation Equations Calculator</h1>
         <hr>
@@ -22,20 +38,4 @@
        
         
     </body>
-<script>        
-function computeForce() {
 
-   m = document.forms["input_form"]["mterm"].value;
-   a = document.forms["input_form"]["aterm"].value;
-   if (m == 0){
-        outputText = "<em>m</em> cannot equal zero!";
-    } else if (isNaN(m)){
-        outputText = "<em>m</em> must be a number!":
-    } else if (isNaN(a)){
-    outputText = "<em>a</em> must be a number!";}
-if (a ==0){
-outputText = "<em>a</em> cannot equal zero!";
-    } 
-document.getElementById("output_text").innerHTML = outputText:
-}
-        </script>
