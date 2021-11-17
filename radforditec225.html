@@ -20,23 +20,6 @@
         </form>
         <p id=output_
        
-        <br>
-        <h2> Calculate Dissplacement </h2>
-        <p>To calculate dissplacement we will use the formula D=vi*t-(1/2)a*t^2 which is Kinematic Physic Equation </p>
-        <h4>Please Enter The Displacement</h4>
-         <form action=""method="">
-            <input type="number">
-        </form>
-        <h4>Please Enter The Initial Velocity in m/s^2 </h4>
-         <form action=""method="">
-            <input type="number">
-        </form>
-       
-        <br>
-        <br>
-        <h2>Quadratric Formula </h2> 
-        <br>
-        <br>
         
     </body>
 <script>        
@@ -46,28 +29,12 @@ function computeForce() {
    a = document.forms["input_form"]["aterm"].value;
    if (m ==0){
 outputText = "<em>m</em> cannot equal zero!";
+    }lse if (isNaN(m)){
+        outputText = "<em>m</em> must be a number!":
     }
 if (a ==0){
 outputText = "<em>a</em> cannot equal zero!";
-    }
+    } 
 document.getElementById("output_text").innerHTML = outputText:
 }
-</script>
-// part 2
-function computeAvgVelocity() {
-    // code
-
-}
-
-
-// part 3
-function computePrincipal() {
-    // code
-
-}
-
-// part 4
-function computePresentValue() {
-    // code
-
-}
+        </script>
