@@ -5,7 +5,7 @@
     <meta charset="utf-8"/>
 </head>
     <script>        
-function computeForce() {
+function validate () {
 
    m = document.forms["input_form"]["mterm"].value;
    a = document.forms["input_form"]["aterm"].value;
@@ -20,6 +20,8 @@ outputText = "<em>a</em> cannot equal zero!";
     } 
 document.getElementById("output_text").innerHTML = outputText:
 }
+        var f = m * a ;
+        outputText = "The Force is " m ;
         </script>
     <body>
         <h1> Calculation Equations Calculator</h1>
