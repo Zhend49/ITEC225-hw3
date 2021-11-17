@@ -43,14 +43,20 @@
         <br>
         
     </body>
-        
-** part 1**
+<script>        
 function computeForce() {
-   
-//help
+
+   m = document.forms["input_form"]["mterm"].value;
+   a = document.forms["input_form"]["aterm"].value;
+   if (m ==0){
+outputText = "<em>m</em> cannot equal zero!";
+    }
+if (a ==0){
+outputText = "<em>a</em> cannot equal zero!";
+    }
+document.getElementById("output_text").innerHTML = outputText:
 }
-
-
+</script>
 // part 2
 function computeAvgVelocity() {
     // code
